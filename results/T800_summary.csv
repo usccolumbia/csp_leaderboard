@@ -1,0 +1,17 @@
+rank,method,family,trained_on,n_targets,targets_with_candidates,top1,top1_pct,top1_ci95_low,top1_ci95_high,top5,top20,top20_pct,top20_ci95_low,top20_ci95_high,sg_top1_pct,consensus_top1,p_holm_vs_tcspv3_top1,note
+1,TCSPv3,Template substitution,template library,800,781,518,64.8,61.5,68.0,579,592,74.0,71.0,77.0,61.3,477,,
+2,MaskGXT,Token sequence models,MP-20,800,112,76,9.5,7.5,11.5,79,81,10.1,8.1,12.2,5.0,38,1.61e-120,"Locally retrained MP-20 checkpoint; supports cells of up to 20 atoms, larger targets count as misses. On T180 its p-value is unadjusted (not in the paper's 15-comparison Holm family)."
+3,OMatG,Flow / ODE,MP-20,800,793,73,9.1,7.2,11.1,76,77,9.6,7.6,11.6,9.2,58,1.33e-124,
+4,Crystalite,Diffusion / score-based,MP-20,800,795,72,9.0,7.1,11.0,75,79,9.9,7.9,12.0,9.8,62,3.79e-127,
+5,CrystalFlow,Flow / ODE,MP-20,800,795,70,8.8,6.9,10.8,74,78,9.8,7.8,11.8,9.5,59,1.79e-126,
+6,EquiCSP,Diffusion / score-based,MP-20,800,774,65,8.1,6.4,10.1,70,77,9.6,7.6,11.6,9.2,56,1.3e-130,
+7,Uni-3DAR,Token sequence models,MP-20,800,298,64,8.0,6.1,9.9,68,69,8.6,6.8,10.6,7.9,56,7.45e-126,
+8,DiffCSP,Diffusion / score-based,MP-20,800,785,61,7.6,5.9,9.5,65,77,9.6,7.8,11.6,8.4,51,9.72e-132,
+9,uFlowCSP,Flow / ODE,MP-20,800,604,58,7.2,5.5,9.1,62,69,8.6,6.8,10.6,7.9,51,1.42e-132,
+10,MatterGen,Diffusion / score-based,MP-20,800,795,43,5.4,3.9,7.0,47,59,7.4,5.6,9.2,6.6,37,3.99e-134,
+11,cond-CDVAE,VAE + Langevin,MP-20,800,774,37,4.6,3.2,6.1,43,45,5.6,4.1,7.2,6.1,31,2.6e-140,
+12,GemsDiff,Symmetry-first (Wyckoff),MP-20,800,795,31,3.9,2.6,5.2,34,37,4.6,3.2,6.1,5.2,24,2.57e-136,
+13,TGDMat,Diffusion / score-based,MP-20,800,795,21,2.6,1.6,3.8,27,29,3.6,2.4,5.0,4.2,17,6.84e-149,
+14,CDVAE,VAE + Langevin,MP-20,800,795,18,2.2,1.2,3.4,18,20,2.5,1.5,3.6,3.9,15,2.47e-144,
+15,SymmCD,Symmetry-first (Wyckoff),MP-20,800,785,9,1.1,0.5,1.9,10,10,1.2,0.5,2.1,2.4,5,1.28e-148,
+16,CrystalGRW,Diffusion / score-based,Alex-MP-20,800,795,7,0.9,0.2,1.6,7,7,0.9,0.2,1.6,2.8,6,5.75e-151,

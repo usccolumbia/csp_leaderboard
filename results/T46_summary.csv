@@ -1,0 +1,21 @@
+rank,method,family,trained_on,n_targets,targets_with_candidates,top1,top1_pct,top1_ci95_low,top1_ci95_high,top5,top20,top20_pct,top20_ci95_low,top20_ci95_high,sg_top1_pct,consensus_top1,p_holm_vs_tcspv3_top1,note
+1,TCSPv3,Template substitution,template library,46,46,35,76.1,63.0,87.0,41,41,89.1,78.3,97.8,73.9,34,,
+2,Uni-3DAR,Token sequence models,MP-20,46,45,32,69.6,56.5,82.6,32,33,71.7,58.7,84.8,65.2,29,0.508,
+3,MaskGXT,Token sequence models,MP-20,46,45,30,65.2,50.0,78.3,30,31,67.4,54.3,80.4,45.7,20,0.453,"Locally retrained MP-20 checkpoint; supports cells of up to 20 atoms, larger targets count as misses. On T180 its p-value is unadjusted (not in the paper's 15-comparison Holm family)."
+4,Crystalite,Diffusion / score-based,MP-20,46,46,27,58.7,43.5,71.7,28,32,69.6,56.5,82.6,56.5,25,0.116,
+5,OMatG,Flow / ODE,MP-20,46,46,27,58.7,45.7,71.7,28,30,65.2,52.2,78.3,50.0,23,0.0469,
+6,uFlowCSP,Flow / ODE,MP-20,46,46,27,58.7,43.5,71.7,30,30,65.2,50.0,78.3,56.5,25,0.0469,
+7,EquiCSP,Diffusion / score-based,MP-20,46,46,27,58.7,43.5,71.7,29,29,63.0,47.8,76.1,56.5,26,0.0859,
+8,CrystalFlow,Flow / ODE,MP-20,46,46,26,56.5,41.3,69.6,27,31,67.4,54.3,80.4,52.2,24,0.0352,
+9,DiffCSP,Diffusion / score-based,MP-20,46,46,26,56.5,41.3,69.6,28,31,67.4,54.3,80.4,54.3,25,0.0352,
+10,USPEX,Global structure search,none (search),46,41,26,56.5,43.5,71.7,28,30,65.2,52.2,78.3,47.8,21,0.0352,T46 only; global search. Being re-run with MatterSim relaxation for all targets; numbers are provisional.
+11,MatterGen,Diffusion / score-based,MP-20,46,46,25,54.3,39.1,67.4,25,27,58.7,43.5,71.7,52.2,24,0.0195,
+12,MAGUS,Global structure search,none (search),46,46,23,50.0,34.8,65.2,24,26,56.5,41.3,71.7,43.5,20,0.00537,T46 only; global search with MatterSim relaxation and ORB-v3 final ranking.
+13,cond-CDVAE,VAE + Langevin,MP-20,46,46,17,37.0,23.9,52.2,18,19,41.3,28.3,56.5,34.8,16,0.000107,
+14,TGDMat,Diffusion / score-based,MP-20,46,46,17,37.0,23.9,52.2,17,18,39.1,26.1,54.3,32.6,15,0.000481,
+15,XtalOpt,Global structure search,none (search),46,46,17,37.0,23.9,50.0,17,17,37.0,23.9,50.0,34.8,14,0.000107,T46 only; global search with MatterSim relaxation and ORB-v3 final ranking.
+16,GemsDiff,Symmetry-first (Wyckoff),MP-20,46,46,15,32.6,19.6,45.7,15,16,34.8,21.7,47.8,37.0,15,2.86e-05,
+17,CDVAE,VAE + Langevin,MP-20,46,46,12,26.1,13.0,39.1,12,12,26.1,13.0,39.1,23.9,10,2.48e-05,
+18,CrystalGRW,Diffusion / score-based,Alex-MP-20,46,46,8,17.4,6.5,28.3,8,8,17.4,6.5,28.3,13.0,6,2.68e-07,
+19,SymmCD,Symmetry-first (Wyckoff),MP-20,46,46,7,15.2,6.5,26.1,7,8,17.4,6.5,28.3,13.0,5,9.82e-07,
+20,CrystalFormer,Token sequence models,Alex-20s,46,27,3,6.5,0.0,15.2,4,4,8.7,2.2,17.4,6.5,2,8.85e-09,
