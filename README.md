@@ -1,5 +1,7 @@
 # CSP leaderboard
 
+**Live leaderboard:** [MaterialsAtlas.org/csp-leaderboard](http://MaterialsAtlas.org/csp-leaderboard)
+
 Test sets and key results for crystal structure prediction (CSP) from the paper **"A diagnostic framework and leaderboard
 for benchmarking crystal structure prediction"** (Y. Feng, L. Tao, J. Hu, R. Dong, L. Wei, S. Dey, R. Rogers, M. Hu and
 J. Hu; in preparation). Machine Learning and Evolution Lab, University of South Carolina.
