@@ -13,6 +13,8 @@ J. Hu; in preparation). Machine Learning and Evolution Lab, University of South 
   failure modes of every method on T180.
 * **Code**: the metrics ([`metrics/`](metrics)) and the diagnostic package [`csp_bench`](csp_bench), which assigns each
   failed prediction to one of ten failure modes (F0–F9) along symmetry, lattice, bonding and energy axes.
+* **Analysis** ([`analysis/`](analysis)): scripts that reproduce the T180 figures, tables and quoted numbers of the paper
+  from per-target tables.
 
 ## Test sets
 
