@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Sc2GeB2Ru2Rh3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.01643082
+_cell_length_b   9.28443309
+_cell_length_c   9.35317623
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sc2GeB2Ru2Rh3
+_chemical_formula_sum   'Sc4 Ge2 B4 Ru4 Rh6'
+_cell_volume   261.94365104
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.00000000  0.32503741  0.82278346  1.0
+  Sc  Sc1  1  0.00000000  0.67496259  0.17721654  1.0
+  Sc  Sc2  1  0.00000000  0.82503741  0.67721654  1.0
+  Sc  Sc3  1  0.00000000  0.17496259  0.32278346  1.0
+  Ge  Ge4  1  0.00000000  0.50000000  0.50000000  1.0
+  Ge  Ge5  1  0.00000000  0.00000000  0.00000000  1.0
+  B  B6  1  0.00000000  0.87965096  0.37120313  1.0
+  B  B7  1  0.00000000  0.12034904  0.62879687  1.0
+  B  B8  1  0.00000000  0.37965096  0.12879687  1.0
+  B  B9  1  0.00000000  0.62034904  0.87120313  1.0
+  Ru  Ru10  1  0.50000000  0.43051080  0.28657655  1.0
+  Ru  Ru11  1  0.50000000  0.56948920  0.71342345  1.0
+  Ru  Ru12  1  0.50000000  0.93051080  0.21342345  1.0
+  Ru  Ru13  1  0.50000000  0.06948920  0.78657655  1.0
+  Rh  Rh14  1  0.50000000  0.71696353  0.43057011  1.0
+  Rh  Rh15  1  0.50000000  0.28303647  0.56942989  1.0
+  Rh  Rh16  1  0.50000000  0.78303647  0.93057011  1.0
+  Rh  Rh17  1  0.50000000  0.21696353  0.06942989  1.0
+  Rh  Rh18  1  0.50000000  0.50000000  0.00000000  1.0
+  Rh  Rh19  1  0.50000000  0.00000000  0.50000000  1.0

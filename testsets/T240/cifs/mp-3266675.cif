@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_YbCe(SiIr2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   17.58089263
+_cell_length_b   4.07925457
+_cell_length_c   4.07925489
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   96.66210714
+_cell_angle_gamma   96.66210991
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   YbCe(SiIr2)2
+_chemical_formula_sum   'Yb2 Ce2 Si4 Ir8'
+_cell_volume   288.58728548
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.89859319  0.44929659  0.19929759  1.0
+  Yb  Yb1  1  0.39859419  0.19929659  0.44929659  1.0
+  Ce  Ce2  1  0.59322418  0.79661309  0.54661109  1.0
+  Ce  Ce3  1  0.09322418  0.54661309  0.79661209  1.0
+  Si  Si4  1  0.67939311  0.33969555  0.08969655  1.0
+  Si  Si5  1  0.17939311  0.08969555  0.33969555  1.0
+  Si  Si6  1  0.82384289  0.91192295  0.66192095  1.0
+  Si  Si7  1  0.32384289  0.66192295  0.91192195  1.0
+  Ir  Ir8  1  0.54422158  0.27211179  0.02211179  1.0
+  Ir  Ir9  1  0.75142107  0.87571153  0.12571153  1.0
+  Ir  Ir10  1  0.04422158  0.02211179  0.27211079  1.0
+  Ir  Ir11  1  0.25115439  0.62557869  0.37557669  1.0
+  Ir  Ir12  1  0.75115439  0.37557769  0.62557669  1.0
+  Ir  Ir13  1  0.95815059  0.97907679  0.72907479  1.0
+  Ir  Ir14  1  0.25142107  0.12571053  0.87571153  1.0
+  Ir  Ir15  1  0.45815059  0.72907679  0.97907579  1.0

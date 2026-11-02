@@ -1,0 +1,17 @@
+{
+ "status": "validated_formula_schema_with_single_replacement",
+ "count": 46,
+ "source_metadata_sha256": "a04a4d84aa310c351078aeb9a12eb0c4510910fcd89345bbd726c8b09fc1c15d",
+ "source_records_sha256": "971f75e3901b765242693dc13deba4ae45909ae3b9ccea390bccacaf85307f73",
+ "cohort_unchanged": true,
+ "cif_bytes_unchanged": true,
+ "primitive_formula_semantics": "integer elemental counts of geometric primitive cell",
+ "primitive_method": "pymatgen StructureMatcher reduction; spglib symprec=0.01 disagreements flagged and submission disallowed",
+ "protocol": "primitive-cell-count-conditioned; not composition-only blind CSP",
+ "replacement": {
+  "old_id": "mp-1183076",
+  "new_id": "mp-3576",
+  "reason": "reference is theoretical and phonon-unstable (DFT minimum frequency -1.60 THz)"
+ },
+ "release": "v3.1"
+}

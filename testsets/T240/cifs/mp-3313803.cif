@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_BeNb6B3Ru10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.41456576
+_cell_length_b   9.41456576
+_cell_length_c   3.04452228
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.16913954
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BeNb6B3Ru10
+_chemical_formula_sum   'Be1 Nb6 B3 Ru10'
+_cell_volume   269.84715931
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Be  Be0  1  0.62138978  0.87861022  0.00000000  1.0
+  Nb  Nb1  1  0.82366114  0.67633886  0.00000000  1.0
+  Nb  Nb2  1  0.17620937  0.32379063  0.00000000  1.0
+  Nb  Nb3  1  0.32501746  0.82434983  0.00000000  1.0
+  Nb  Nb4  1  0.67565017  0.17498254  0.00000000  1.0
+  Nb  Nb5  1  0.50034552  0.50150755  0.00000000  1.0
+  Nb  Nb6  1  0.99849245  0.99965448  0.00000000  1.0
+  B  B7  1  0.37934758  0.12065242  0.00000000  1.0
+  B  B8  1  0.12127612  0.62166987  0.00000000  1.0
+  B  B9  1  0.87833013  0.37872388  0.00000000  1.0
+  Ru  Ru10  1  0.56947338  0.71243864  0.50000000  1.0
+  Ru  Ru11  1  0.42763051  0.28236232  0.50000000  1.0
+  Ru  Ru12  1  0.07291825  0.78095717  0.50000000  1.0
+  Ru  Ru13  1  0.92948054  0.21979517  0.50000000  1.0
+  Ru  Ru14  1  0.28020483  0.57051946  0.50000000  1.0
+  Ru  Ru15  1  0.71904283  0.42708175  0.50000000  1.0
+  Ru  Ru16  1  0.21763768  0.07236949  0.50000000  1.0
+  Ru  Ru17  1  0.78756136  0.93052662  0.50000000  1.0
+  Ru  Ru18  1  0.49677429  0.00322571  0.50000000  1.0
+  Ru  Ru19  1  0.99955760  0.50044240  0.50000000  1.0

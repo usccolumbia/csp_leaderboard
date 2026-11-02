@@ -1,0 +1,12 @@
+{
+ "status": "validated_formula_schema",
+ "count": 800,
+ "source_metadata_sha256": "4b3846684e3e4f09560c567874c686b3cba73a237075791a4c68d5e7e5b34a73",
+ "source_records_sha256": "cd8aed15b06527662bdab0157b792d6c9827359056d8a1c86bf6e5578e1b5975",
+ "cohort_unchanged": true,
+ "cif_bytes_unchanged": true,
+ "primitive_formula_semantics": "integer elemental counts of geometric primitive cell",
+ "primitive_method": "pymatgen StructureMatcher reduction; spglib symprec=0.01 disagreements flagged and submission disallowed",
+ "protocol": "primitive-cell-count-conditioned; not composition-only blind CSP",
+ "release": "v3.1"
+}
