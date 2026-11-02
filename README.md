@@ -11,6 +11,8 @@ J. Hu; in preparation). Machine Learning and Evolution Lab, University of South 
 * **The MP-20 audit and replacement records** for these sets.
 * **Key results**: top-k match rates with bootstrap intervals and paired tests on every set, and per-target scores and
   failure modes of every method on T180.
+* **Code**: the metrics ([`metrics/`](metrics)) and the diagnostic package [`csp_bench`](csp_bench), which assigns each
+  failed prediction to one of ten failure modes (F0–F9) along symmetry, lattice, bonding and energy axes.
 
 ## Test sets
 
