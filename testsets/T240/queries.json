@@ -778,10 +778,10 @@
  },
  {
   "material_id": "mp-557387",
-  "formula": "Nb1O6Sr2Tm1",
-  "primitive_nsites": 10,
+  "formula": "Sr4Tm2Nb2O12",
+  "primitive_nsites": 20,
   "reduced_formula": "Sr2TmNbO6",
-  "submission_allowed": false
+  "submission_allowed": true
  },
  {
   "material_id": "mp-3207593",

@@ -4552,7 +4552,7 @@
  },
  {
   "material_id": "mp-557387",
-  "primitive_formula": "Nb1O6Sr2Tm1",
+  "primitive_formula": "Sr4Tm2Nb2O12",
   "full_formula": "Sr4Tm2Nb2O12",
   "pretty_formula": "Sr2TmNbO6",
   "nsites": 20,
@@ -4583,12 +4583,12 @@
   "original_category": "",
   "api_resolved_material_id": "",
   "reduced_formula": "Sr2TmNbO6",
-  "primitive_cell_formula": "Nb1O6Sr2Tm1",
+  "primitive_cell_formula": "Sr4Tm2Nb2O12",
   "full_cell_formula": "Sr4Tm2Nb2O12",
-  "primitive_nsites": 10,
+  "primitive_nsites": 20,
   "formula_schema_version": "3",
   "formula_repair_parent_version": "v2_20260929_structure_clean",
-  "primitive_cell_validation": "needs_symmetry_review",
+  "primitive_cell_validation": "corrected_20261101",
   "spglib_001_nsites": 20
  },
  {
