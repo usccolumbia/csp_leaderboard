@@ -47,6 +47,9 @@ matches. Every method's candidates are relaxed with the ORB-v3 machine-learned i
 energy. Targets without a valid candidate count as failures. The CSV files in `results/` also give 95% bootstrap
 intervals over targets (10,000 resamples); `p_holm` is an exact McNemar test of top-1 against TCSPv3, Holm-corrected within each set.
 
+The metric code is in [`metrics/`](metrics): `evaluate.py` scores a method on a test set and `compare.py` computes the
+intervals and paired tests.
+
 ## Results on T180
 
 Targets matched out of 180 (rate in %).
