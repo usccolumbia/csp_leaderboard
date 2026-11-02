@@ -42,30 +42,32 @@ references are phonon-stable (162) or experimentally confirmed (18).
 A candidate matches the reference if pymatgen `StructureMatcher(ltol=0.2, stol=0.3, angle_tol=5, primitive_cell=True,
 scale=True, attempt_supercell=False)` returns a fit. Top-k counts a target as solved if any of the first k candidates
 matches. Every method's candidates are relaxed with the ORB-v3 machine-learned interatomic potential and ranked by
-energy. Targets without a valid candidate count as failures. Intervals are 95% percentile bootstrap intervals over
-targets (10,000 resamples); `p_holm` is an exact McNemar test of top-1 against TCSPv3, Holm-corrected within each set.
+energy. Targets without a valid candidate count as failures. The CSV files in `results/` also give 95% bootstrap
+intervals over targets (10,000 resamples); `p_holm` is an exact McNemar test of top-1 against TCSPv3, Holm-corrected within each set.
 
 ## Results on T180
 
-| # | Method | Trained on | Top-1 (%) [95% CI] | Top-5 | Top-20 (%) [95% CI] | Space group top-1 (%) | p<sub>Holm</sub> vs TCSPv3 |
-|---:|---|---|---:|---:|---:|---:|---:|
-| 1 | TCSPv3 | template library | 130 (72.2) [65.6–78.9] | 159 | 163 (90.6) [86.1–94.4] | 71.1 |  |
-| 2 | CrystalFlow | MP-20 | 115 (63.9) [56.7–70.6] | 121 | 130 (72.2) [65.6–78.3] | 62.2 | 0.036 |
-| 3 | MaskGXT † | MP-20 | 113 (62.8) [55.6–70.0] | 116 | 119 (66.1) [58.9–72.8] | 40.0 | 0.027 |
-| 4 | Crystalite | MP-20 | 112 (62.2) [55.0–69.4] | 120 | 132 (73.3) [66.7–79.4] | 62.2 | 0.035 |
-| 5 | OMatG | MP-20 | 107 (59.4) [52.2–66.7] | 116 | 124 (68.9) [62.2–75.6] | 57.8 | 0.003 |
-| 6 | Uni-3DAR | MP-20 | 105 (58.3) [51.1–65.6] | 110 | 114 (63.3) [56.1–70.0] | 57.8 | 0.003 |
-| 7 | EquiCSP | MP-20 | 102 (56.7) [49.4–63.9] | 111 | 119 (66.1) [58.9–72.8] | 57.2 | <0.001 |
-| 8 | uFlowCSP | MP-20 | 101 (56.1) [48.9–63.3] | 117 | 120 (66.7) [59.4–73.3] | 57.2 | <0.001 |
-| 9 | MatterGen | MP-20 | 97 (53.9) [46.7–61.1] | 110 | 119 (66.1) [59.4–72.8] | 53.9 | <0.001 |
-| 10 | DiffCSP | MP-20 | 97 (53.9) [46.7–61.1] | 108 | 115 (63.9) [56.7–71.1] | 54.4 | <0.001 |
-| 11 | cond-CDVAE | MP-20 | 72 (40.0) [32.8–47.2] | 82 | 86 (47.8) [40.6–55.0] | 40.6 | <0.001 |
-| 12 | GemsDiff | MP-20 | 62 (34.4) [27.8–41.7] | 64 | 66 (36.7) [29.4–43.9] | 33.9 | <0.001 |
-| 13 | TGDMat | MP-20 | 50 (27.8) [21.7–34.4] | 52 | 53 (29.4) [22.8–36.1] | 26.1 | <0.001 |
-| 14 | CDVAE | MP-20 | 48 (26.7) [20.6–33.3] | 52 | 53 (29.4) [22.8–36.1] | 23.9 | <0.001 |
-| 15 | SymmCD | MP-20 | 40 (22.2) [16.1–28.3] | 45 | 49 (27.2) [20.6–33.9] | 18.9 | <0.001 |
-| 16 | CrystalGRW | Alex-MP-20 | 23 (12.8) [8.3–17.8] | 24 | 24 (13.3) [8.3–18.3] | 12.8 | <0.001 |
-| 17 | CrystalFormer | Alex-20s | 12 (6.7) [3.3–10.6] | 13 | 13 (7.2) [3.9–11.1] | 6.1 | <0.001 |
+Targets matched out of 180 (rate in %).
+
+| # | Method | Trained on | Top-1 | Top-5 | Top-20 | p<sub>Holm</sub> vs TCSPv3 |
+|---:|---|---|---:|---:|---:|---:|
+| 1 | TCSPv3 | template library | 130 (72.2) | 159 | 163 (90.6) |  |
+| 2 | CrystalFlow | MP-20 | 115 (63.9) | 121 | 130 (72.2) | 0.036 |
+| 3 | MaskGXT † | MP-20 | 113 (62.8) | 116 | 119 (66.1) | 0.027 |
+| 4 | Crystalite | MP-20 | 112 (62.2) | 120 | 132 (73.3) | 0.035 |
+| 5 | OMatG | MP-20 | 107 (59.4) | 116 | 124 (68.9) | 0.003 |
+| 6 | Uni-3DAR | MP-20 | 105 (58.3) | 110 | 114 (63.3) | 0.003 |
+| 7 | EquiCSP | MP-20 | 102 (56.7) | 111 | 119 (66.1) | <0.001 |
+| 8 | uFlowCSP | MP-20 | 101 (56.1) | 117 | 120 (66.7) | <0.001 |
+| 9 | MatterGen | MP-20 | 97 (53.9) | 110 | 119 (66.1) | <0.001 |
+| 10 | DiffCSP | MP-20 | 97 (53.9) | 108 | 115 (63.9) | <0.001 |
+| 11 | cond-CDVAE | MP-20 | 72 (40.0) | 82 | 86 (47.8) | <0.001 |
+| 12 | GemsDiff | MP-20 | 62 (34.4) | 64 | 66 (36.7) | <0.001 |
+| 13 | TGDMat | MP-20 | 50 (27.8) | 52 | 53 (29.4) | <0.001 |
+| 14 | CDVAE | MP-20 | 48 (26.7) | 52 | 53 (29.4) | <0.001 |
+| 15 | SymmCD | MP-20 | 40 (22.2) | 45 | 49 (27.2) | <0.001 |
+| 16 | CrystalGRW | Alex-MP-20 | 23 (12.8) | 24 | 24 (13.3) | <0.001 |
+| 17 | CrystalFormer | Alex-20s | 12 (6.7) | 13 | 13 (7.2) | <0.001 |
 
 † MaskGXT: locally retrained MP-20 checkpoint; supports cells of up to 20 atoms (4 T180 targets count as misses).
 On T180 the Holm correction is over the 15 other generators, as in the paper; the MaskGXT p-value is unadjusted.
