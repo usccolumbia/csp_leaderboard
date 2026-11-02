@@ -121,7 +121,23 @@ Run your method on the queries of a test set, export up to 20 ranked candidates 
 request with the candidates and a short description (training data, checkpoint, sampling settings). We evaluate them
 with the protocol above and add the results.
 
-## License
+## License and data attribution
 
-MIT (see [`LICENSE`](LICENSE)). Reference structures are derived from the Materials Project (CC BY 4.0) and MPTS-52.
+* **Code** (`metrics/`, `csp_bench/`, `analysis/`): MIT, see [`LICENSE`](LICENSE).
+* **Reference structures** (`testsets/*/cifs/`) and the metadata derived from them: a snapshot of Materials Project data
+  taken for release v3.1 (8 October 2026), redistributed under the
+  [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/) of the
+  Materials Project. The files are provided so that the benchmark is reproducible; the Materials Project corrects and
+  updates its data over time, so obtain current structures and properties from
+  [materialsproject.org](https://materialsproject.org). The MIT license does not apply to these data.
+
+If you use the test sets, please cite the Materials Project and MPTS-52, from which the replacement targets and T800
+were drawn:
+
+* A. Jain, S. P. Ong, G. Hautier, W. Chen, W. D. Richards, S. Dacek, S. Cholia, D. Gunter, D. Skinner, G. Ceder and
+  K. A. Persson, "Commentary: The Materials Project: A materials genome approach to accelerating materials
+  innovation", *APL Materials* **1**, 011002 (2013).
+* S. G. Baird, H. M. Sayeed, J. Montoya and T. D. Sparks, "matbench-genmetrics: A Python library for benchmarking
+  crystal structure generative models using time-based splits of Materials Project structures", *Journal of Open
+  Source Software* **9**, 5618 (2024).
 
